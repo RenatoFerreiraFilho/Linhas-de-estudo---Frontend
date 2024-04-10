@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button type="button">Clique Aqui</button>
+    <a href="#" >Clique aqui</a>
+</body>
+</html>
+
+
+<script>
+    var btn = document.querySelector('button')
+    var link = document.querySelector('a')
+
+    btn.addEventListener('click', alerta);
+
+    function alerta(e){
+
+        let o_event = e ? e : window.event;//usado para garantir a compatibilidade
+        //as vezes o evento está na variável global window, e preciso usar window.event para captá-lo
+
+        let msg = "Posicao x é: " + o_event.screenX;
+        window.alert(msg)
+    }
+    
+
+
+
+</script>

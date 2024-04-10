@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Aula 1 - Mouse Events</title>
+</head>
+<body>
+    Exemplo de mousedown
+    <p id="a">Clique aqui</p>
+</body>
+<script>
+    let p = document.getElementById("a")
+
+    p.addEventListener("mousedown", (event)=>{event.target.innerHTML = "O mouse está pressionado"}, false)
+
+    p.addEventListener("mouseup", (event)=> event.target.innerHTML = "O mouse não está mais pressionado", false)
+
+</script>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Aula 1 - Mouse Events parte 2</title>
+    <style>
+        .selected{
+            text-decoration: line-through;
+        }
+        li{
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    Selecione os itens da lista:
+    <br>
+    <ul id="ul">
+        <li>Item A</li>
+        <li>Item B</li>
+        <li>Item C</li>
+        <li>Item D</li>
+        <li>Item E</li>
+        <li>Item F</li>
+    </ul>
+</body>
+<script>
+
+</script>
+</html>
+
+<script>
+    let ul = document.getElementById("ul")
+    ul.addEventListener("click", selectItem);
+
+    function selectItem (event){
+        if (event.target.tagName != "LI") return
+
+        if (event.ctrlKey || event.metaKey){
+            toggleSelect(event.target);
+        } else{
+            singleSelect(event.target);
+        }
+    }
+
+    function singleSelect(li){
+        let selected = ul.querySelectorAll(".selected");
+        for (let elem of selected){
+            elem.classList.remove("selected")
+        }
+        li.classList.add("selected")
+    }
+
+    function toggleSelect(li){
+        li.classList.add("selected")
+    }
+
+</script>

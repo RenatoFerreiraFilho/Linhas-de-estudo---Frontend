@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Aula 1 - Mouse Over</title>
+</head>
+<body>
+    Exemplo de mouseover e mouseout
+    <p id="a">Passe o mouse</p>
+</body>
+<script>
+    let p = document.getElementById("a")
+
+    p.addEventListener("mouseover", mouseOver, false)
+    p.addEventListener("mouseout", mouseOut, false)
+
+    function mouseOver(event){
+        event.target.innerHTML = "O mouse está sobre o elemento"
+    }
+    function mouseOut(event){
+        event.target.innerHTML = "Passe o mouse"
+    }
+
+</script>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <style type="text/css">
+            div, p, a {
+                padding: 15px 30px;
+                display: block;
+                border: 2px solid #000;
+                background: #fff;
+            }
+
+        </style>
+        <title>Aula 1 - Propagação de eventos - Capturing</title>
+        <!-- no Capturing, o evento inicia no elemento mais alto e vai descendo para os mais aninhados -->
+        <!-- preciso usar o addeventlistenner -->
+    </head>
+    <body>
+        <div>
+            DIV
+            <p>
+                P
+                <a href="#"
+                    >A</a
+                >
+            </p>
+        </div>
+        <script>
+            let elements = document.querySelectorAll("div, p, a")
+            function showTagName(){
+                alert("Captura: " + this.tagName)
+            }
+            for (let elem of elements){
+                elem.addEventListener("click", showTagName,false)//o true indica que quero que ele faça o capturing. Se nao, faria borbulhamento
+            }
+        </script>
+    </body>
+</html>

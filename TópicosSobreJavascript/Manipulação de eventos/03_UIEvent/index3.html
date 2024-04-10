@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Aula 1 - Interface UIEvent - BeforeUnload</title>
+</head>
+<body>
+    <a href="https://www.google.com.br">Página do Google</a>
+    <p>
+        Exemplo para before unload (quando usuario está saindo da página)
+    </p>
+</body>
+<script>
+    window.addEventListener("beforeunload", ()=>{
+        console.log("Antes de sair")
+    })
+
+    window.addEventListener("unload", ()=> {
+        console.log("Saiu da página")
+    })
+</script>
+</html>
