@@ -4,13 +4,13 @@ Aqui estão as linhas de código que embasam meu conhecimento em algumas tecnolo
 
 ## Índice
 
--   [Tópicos sobre Javascript](DesenvolvimentoFrontend/TópicosSobreJavascript)
+-   [Tópicos sobre Javascript](TópicosSobreJavascript/)
 
     -   Manipulação de eventos
     -   Escopos de funções
     -   JS assíncrono
 
--   [React](DesenvolvimentoFrontEnd/React/)
+-   [React](React/)
 
     -   Function components
     -   React hooks
@@ -18,7 +18,7 @@ Aqui estão as linhas de código que embasam meu conhecimento em algumas tecnolo
     -   Estado e comportamento
     -   React-router
 
--   [Typescript e React Typescript](DesenvolvimentoFrontEnd/TypescriptEReactTypescript/)
+-   [Typescript e React Typescript](TypescriptEReactTypescript/)
 
     -   Tipos primitivos, arrays e objetos
     -   Interfaces
@@ -32,12 +32,12 @@ Aqui estão as linhas de código que embasam meu conhecimento em algumas tecnolo
     -   useReducer
     -   Redux
 
--   [Bibliotecas de Data Fetching](DesenvolvimentoFrontEnd/BibliotecasDeDataFetching/)
+-   [Bibliotecas de Data Fetching](BibliotecasDeDataFetching/)
 
     -   SWR - Stale While Revalidate
     -   Tanstack Query
 
--   [Test-Driven Development (TDD)](<DesenvolvimentoFrontEnd/TestDrivenDevelopment(TDD)/>)
+-   [Test-Driven Development (TDD)](<TestDrivenDevelopment(TDD)/>)
     -   Jest
 
 ## Sobre o Projeto
